@@ -3,7 +3,7 @@ GET http://localhost:3000/productos
 Content-Type: application/json
 
 ###Consulta de producto
-GET http://localhost:3000/productos/1
+GET http://localhost:3000/productos/9
 Content-Type: application/json
 
 ###Crear Producto
@@ -11,25 +11,29 @@ POST http://localhost:3000/productos
 Content-Type: application/json
 
 {
-    "nombre": "Cloro",
-    "precio": 22.00,
-    "descripcion": "Cloro Suli de 1000ml. Agente desinfecatnte y también un oxidante poderoso.",
-    "disponible": true
+  "nombre": "Laptop",
+  "precio": 599.9,
+  "descripcion": "Laptop moderna con 8GB RAM y 256GB SSD",
+  "disponible": true,
+  "fecha_ingreso": "2025-07-06T14:00:00.000Z",
+  "categoriaId": 2
 }
 
 ###Actualizar un producto
-PUT http://localhost:3000/productos/1
+PUT http://localhost:3000/productos/3
 Content-Type: application/json
 
 {
-    "nombre": "Cloro Suli",
-    "precio": 25.00,
-    "descripcion": "Cloro Suli de 1000ml. Agente desinfecatnte y también un oxidante poderoso.",
-    "disponible": true
+  "nombre": "Laptop Dell",
+  "precio": 599.99,
+  "descripcion": "Laptop moderna con 8GB RAM y 256GB SSD",
+  "disponible": true,
+  "fecha_ingreso": "2025-07-06T14:00:00.000Z",
+  "categoriaId": 2
 }
 
 ###Eliminar un producto
-DELETE http://localhost:3000/productos/ 1750561125504
+DELETE http://localhost:3000/productos/8
 Content-Type: application/json
 
 ###Obtener productos disponibles
