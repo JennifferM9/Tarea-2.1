@@ -26,5 +26,5 @@ CREATE TABLE IF NOT EXISTS productos (
     disponible BOOLEAN NOT NULL DEFAULT TRUE,
     fecha_ingreso TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     categoria_id INT,
-    FOREIGN KEY (categoria_id) REFERENCES categorias(id) ON DELETE RESTRICT
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id) 
 );

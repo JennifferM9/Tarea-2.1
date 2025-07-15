@@ -16,11 +16,11 @@ Content-Type: application/json
   "descripcion": "Laptop moderna con 8GB RAM y 256GB SSD",
   "disponible": true,
   "fecha_ingreso": "2025-07-06T14:00:00.000Z",
-  "categoriaId": 2
+  "categoriaId": 1
 }
 
 ###Actualizar un producto
-PUT http://localhost:3000/productos/3
+PUT http://localhost:3000/productos/7
 Content-Type: application/json
 
 {
@@ -29,11 +29,11 @@ Content-Type: application/json
   "descripcion": "Laptop moderna con 8GB RAM y 256GB SSD",
   "disponible": true,
   "fecha_ingreso": "2025-07-06T14:00:00.000Z",
-  "categoriaId": 2
+  "categoriaId": 3
 }
 
 ###Eliminar un producto
-DELETE http://localhost:3000/productos/8
+DELETE http://localhost:3000/categorias/1
 Content-Type: application/json
 
 ###Obtener productos disponibles
