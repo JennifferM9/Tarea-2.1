@@ -89,8 +89,6 @@ export const eliminarCategoria = async (req, res) => {
   try {
     const productos = await countProductosByCategoria(id)
 
-console.log('Productos asociados:', productos)
-
     if (productos > 0) {
     return res.status(400).json({ message: 'No se puede eliminar una categoría con productos asignados' })
     }
